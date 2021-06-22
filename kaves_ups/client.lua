@@ -31,7 +31,7 @@ end)
 
 RegisterNetEvent("kaves_ups:startJob")
 AddEventHandler("kaves_ups:startJob", function()
-    local level = exports["kaves_levelsistemi"]:level()
+    local level = 50 --exports["kaves_levelsistemi"]:level() eğer level scriptiniz varsa exportunu eklemeniz yeterli.
     local player = PlayerPedId()
     ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'upstakejob', {
         title = ('Teslimat Menüsü'),
